@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+    scroll-behavior: smooth;
+} 
+
+body{
+  background-color: rgba(64, 63, 63);
+  color: white;
+}
+
+/* utility classes start*/
+a{
+  text-decoration: none;
+  color: white;
+}
+
+li{
+  list-style-type: none;
+}
+/* utility classes end*/
+
+/* nav section code start */
+nav{
+  background-color: rgb(90, 89, 89);
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 60px;
+}
+
+.logo{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav ul li a{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul li a:hover{
+  color: tomato;
+}
+
+nav ul li a::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: tomato;
+  margin-right: auto;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+.fa-bars{
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-icon{
+  display: none;
+}
+/* nav section code end */
+
+/* hero area setion code start */
+#hero-container{
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 4rem;
+}
+
+.conainer-left{
+  width: 50%;
+}
+
+.conainer-left h1{
+  font-size: 42px;
+  text-shadow: 1px 1px fuchsia;
+}
+
+.conainer-left p{
+  font-size: 18px;
+  color: gray;
+  padding-block: 20px;
+}
+
+.btn{
+  background-color: cadetblue;
+  padding: 12px 30px;
+  border-radius: 5px;
+  transition: 0.5s;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: tomato;
+  color: black;
+}
+
+.container-right{
+  width: 50%;
+}
+
+.container-right img{
+  width: 100%;
+}
+/* hero area setion code end */
+
+/* main section code start */
+/* food section code start */
+#food{
+  padding: 50px 4rem;
+}
+
+#food h2{
+  text-align: center;
+  font-size: 28px;
+}
+
+.food-container{
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.food-item{
+  width: 320px;
+  background-color: white;
+  padding: 20px;
+}
+
+.food-item img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.food-item h3{
+  color: black;
+  padding-block: 15px;
+}
+/* food section code end */
+
+/* trends food section code start */
+#trends{
+  padding: 0px 4rem;
+}
+
+#trends h3{
+  text-align: center;
+  font-size: 28px;
+}
+
+.trending-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 0;
+}
+
+.trending-item{
+  width: 320px;
+  height: 320px;
+  background-color: white;
+  padding: 6px;
+  overflow: hidden;
+}
+
+.trending-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.trending-item img:hover{
+  transform: scale(1.3);
+}
+/* trends food section code end */
+
+/* reviews section code start */
+#reviews{
+ padding: 50px 4rem;
+}
+
+#reviews h4{
+  text-align: center;
+  font-size: 28px;
+}
+
+.reviews-container{
+  padding: 60px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.reviews-item{
+  width: 320px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  border-radius: 12px;
+}
+
+.reviews-item img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.reviews-item p{
+  font-size: 13px;
+  padding: 20px;
+}
+/* reviews section code end */
+
+/* blog section code start */
+#blog{
+  padding: 0px 4rem;
+}
+
+#blog h4{
+  text-align: center;
+  font-size: 28px;
+  padding-block: 15px;
+}
+
+.blog-container{
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.blog-item{
+  width: 320px;
+  background-color: white;
+  padding: 15px;
+}
+
+.blog-item img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.blog-item h5{
+  color: black;
+  font-size: 20px;
+  margin: 10px 0;
+}
+/* blog section code end */
+/* main section code end */
+
+/* footer section code start */
+footer{
+  padding: 40px 4rem;
+  background-color: rgb(7, 7, 7);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 30px;
+}
+
+.col h3{
+  font-weight: 700;
+}
+
+.col p{
+  font-size: 13px;
+}
+
+.col-1{
+  width: 300px;
+}
+
+.col h3{
+  padding-bottom: 20px;
+}
+/* footer section code end */
+
+/* Responsive code start */
+@media screen and (max-width: 800px) {
+  /* nav section code start */
+  nav{
+    padding: 1rem 2rem;
+  }
+
+  nav ul{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: rgb(90, 89, 89);
+    flex-direction: column;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+
+  nav ul li:last-child{
+    padding-bottom: 40px;
+  }
+
+  .menu-icon{
+    display: block;
+  }
+  /* nav section code end */
+
+  /* hero area setion code start */
+  .hero-container{
+    flex-direction: column;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+
+  .conainer-left, .container-right{
+    width: 100%;
+    padding-top: 50px;
+  }
+  /* hero area setion code end */
+
+  /* food section code start  */
+  #food{
+    margin-top: 35px;
+  }
+/* food section code end  */
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+  footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+  }
+}
+/* Responsive code end */
+
